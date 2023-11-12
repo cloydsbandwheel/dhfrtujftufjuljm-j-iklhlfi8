@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Writing Portfolio</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Jaxons Writing Yay</h1>
+
+<div style="text-align: center;">
+  <img src="images/indexhtmlmage1.png" alt="indexhtmlmage1" style="border-radius: 50px;">
+</div>
+
+</header>
+
+<main id="content">
+
+<!-- Writing content will be loaded here using JavaScript -->
+
+</main>
+
+
+<div id="buttons" style="text-align: center; margin-top: 20px;">
+
+<button onclick="loadWriting('writing1')">Stormy Night On Superier</button>
+
+<button onclick="loadWriting('writing2')">Où sont allés auparavant de nombreux hommes</button> 
+
+<button onclick="loadWriting('writing3')">Jaxon is being lazy</button>
+
+</div>
+
+<script src="js/main.js"></script>
+
+<script>
+
+function loadWriting(filename) {
+
+const filePath = `writings/${filename}.html`;
+
+// Use window.location to navigate to the selected writing file 
+
+window.location.href = filePath;
+
+}
+
+</script>
+
+</body>
+
+</html>
